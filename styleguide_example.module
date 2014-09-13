@@ -1,0 +1,36 @@
+<?php
+/**
+ * @file
+ * A module that creates custom markup for the Styleguide Module
+ */
+
+function styleguide_example_styleguide(){
+ $items = array();
+ 
+ $items['button_icon'] = array(
+    'title' => t('Buttons with Icon'), 
+    'group' => t('Code Example'), 
+    'content' => button_icon(),
+ );
+ 
+ return $items;
+}
+
+
+/**
+ *  Buttons with Icons
+ */
+ 
+function button_icon(){
+  $output = " ";
+  
+  $output .= "<a class='button btn-drupal' href='#'> \r\n";
+  $output .= "Drupal Button \r\n";
+  $output .= "</a> \r\n"; 
+  
+  $output .= "<a class='button btn-github' href='#'> \r\n";
+  $output .= "Github Button \r\n";
+  $output .= "</a> \r\n"; 
+  
+  return $output;
+}

@@ -1,0 +1,4 @@
+name = Styleguide Example
+description = Creates custom markup for the Styleguide Module
+core = 7.x
+dependencies[] = styleguide
